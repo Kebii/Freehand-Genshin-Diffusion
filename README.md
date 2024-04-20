@@ -13,9 +13,9 @@ Transferring Gensin PV into freehand style with Diffusion Model.
 
 Here are some results we generated, with the resolution of 480x320.
 
-https://github.com/Kebii/Freehand-Gensin-Diffusion/blob/master/assets/Focalors_demo_480x320_wotpl.mp4
+![](https://github.com/Kebii/Freehand-Gensin-Diffusion/blob/master/assets/Focalors_demo_480x320_wotpl.gif)
 
-https://github.com/Kebii/Freehand-Gensin-Diffusion/blob/master/assets/Navia_demo_480x320_wotpl.mp4
+![](https://github.com/Kebii/Freehand-Gensin-Diffusion/blob/master/assets/Navia_demo_480x320_wotpl.gif)
 
 # Limitations
 We observe following shortcomings in current version:
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 You can download weights manually, which has some steps:
 
-1. Download our trained weights from BaiduDisk(https://), which include two parts: `denoising_unet.pth`, `reference_unet.pth`.
+1. Download our trained weights from [BaiduDisk](https://), which include two parts: `denoising_unet.pth`, `reference_unet.pth`.
 
 2. Download pretrained weight of based models and other components: 
     - [StableDiffusion V1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5)
@@ -82,12 +82,12 @@ Here is the cli command for running inference scripts:
 python -m scripts.paint_gensin --config ./configs/prompts/paint_gensin.yaml -W 480 -H 320
 ```
 
-You can refer the format of `paint_gensin.yaml` and modify the `input_video_path` to transfer other Gensin PVs in MP4 format.
+* You can refer the format of `paint_gensin.yaml` and modify the `input_video_path` to transfer other Gensin PVs in MP4 format.
 
 # Disclaimer
 
 This project is intended for academic research, and we explicitly disclaim any responsibility for user-generated content. Users are solely liable for their actions while using the generative model. The project contributors have no legal affiliation with, nor accountability for, users' behaviors. It is imperative to use the generative model responsibly, adhering to both ethical and legal standards.
 
-# 🙏🏻 Acknowledgements
+# Acknowledgements
 
 This repository is build based on [Moore-AnimateAnyone](https://github.com/MooreThreads/Moore-AnimateAnyone). We thank them for their excellent work in releasing high-quality code.
