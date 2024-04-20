@@ -13,9 +13,9 @@ Transferring Gensin PV into freehand style with Diffusion Model.
 
 Here are some results we generated, with the resolution of 480x320.
 
-https://github.com/Kebii/Freehand-Gensin-Diffusion
+https://github.com/Kebii/Freehand-Gensin-Diffusion/blob/master/assets/Focalors_demo_480x320_wotpl.mp4
 
-https://github.com/Kebii/Freehand-Gensin-Diffusion
+https://github.com/Kebii/Freehand-Gensin-Diffusion/blob/master/assets/Navia_demo_480x320_wotpl.mp4
 
 # Limitations
 We observe following shortcomings in current version:
