@@ -39,14 +39,14 @@ pip install -r requirements.txt
 
 You can download weights manually, which has some steps:
 
-1. Download our trained weights from [BaiduDisk](https://), which include two parts: `denoising_unet.pth`, `reference_unet.pth`.
+1. Download our trained weights from [BaiduDisk](https://pan.baidu.com/s/1TthKg5TQtX5pKQF2UsuZ_Q?pwd=5bhh), which include two parts: `denoising_unet.pth`, `reference_unet.pth`.
 
-2. Download pretrained weight of based models and other components: 
+1. Download pretrained weight of based models and other components: 
     - [StableDiffusion V1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5)
     - [sd-vae-ft-mse](https://huggingface.co/stabilityai/sd-vae-ft-mse)
     - [image_encoder](https://huggingface.co/lambdalabs/sd-image-variations-diffusers/tree/main/image_encoder)
 
-3. Download dwpose weights (`dw-ll_ucoco_384.onnx`, `yolox_l.onnx`) following [this](https://github.com/IDEA-Research/DWPose?tab=readme-ov-file#-dwpose-for-controlnet).
+2. Download dwpose weights (`dw-ll_ucoco_384.onnx`, `yolox_l.onnx`) following [this](https://github.com/IDEA-Research/DWPose?tab=readme-ov-file#-dwpose-for-controlnet).
 
 Finally, these weights should be orgnized as follows:
 
