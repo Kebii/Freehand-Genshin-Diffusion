@@ -80,32 +80,32 @@ def prepare_vae():
         )
 
 
-def prepare_anyone():
-    print(f"Preparing AnimateAnyone weights...")
-    local_dir = "./pretrained_weights"
-    os.makedirs(local_dir, exist_ok=True)
-    for hub_file in [
-        "denoising_unet.pth",
-        "motion_module.pth",
-        "pose_guider.pth",
-        "reference_unet.pth",
-    ]:
-        path = Path(hub_file)
-        saved_path = local_dir / path
-        if os.path.exists(saved_path):
-            continue
+# def prepare_anyone():
+#     print(f"Preparing AnimateAnyone weights...")
+#     local_dir = "./pretrained_weights"
+#     os.makedirs(local_dir, exist_ok=True)
+#     for hub_file in [
+#         "denoising_unet.pth",
+#         "motion_module.pth",
+#         "pose_guider.pth",
+#         "reference_unet.pth",
+#     ]:
+#         path = Path(hub_file)
+#         saved_path = local_dir / path
+#         if os.path.exists(saved_path):
+#             continue
 
-        hf_hub_download(
-            repo_id="patrolli/AnimateAnyone",
-            subfolder=PurePosixPath(path.parent),
-            filename=PurePosixPath(path.name),
-            local_dir=local_dir,
-        )
+#         hf_hub_download(
+#             repo_id="patrolli/AnimateAnyone",
+#             subfolder=PurePosixPath(path.parent),
+#             filename=PurePosixPath(path.name),
+#             local_dir=local_dir,
+#         )
 
 if __name__ == '__main__':
     prepare_base_model()
     prepare_image_encoder()
     prepare_dwpose()
     prepare_vae()
-    prepare_anyone()
+    # prepare_anyone()
     
