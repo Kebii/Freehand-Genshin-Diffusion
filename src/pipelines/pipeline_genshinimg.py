@@ -24,11 +24,11 @@ from src.models.mutual_self_attention import ReferenceAttentionControl
 
 
 @dataclass
-class GensinImagePipelineOutput(BaseOutput):
+class GenshinImagePipelineOutput(BaseOutput):
     images: Union[torch.Tensor, np.ndarray]
 
 
-class GensinImagePipeline(DiffusionPipeline):
+class GenshinImagePipeline(DiffusionPipeline):
     _optional_components = []
 
     def __init__(
@@ -341,4 +341,4 @@ class GensinImagePipeline(DiffusionPipeline):
         if not return_dict:
             return image
 
-        return GensinImagePipelineOutput(images=image)
+        return GenshinImagePipelineOutput(images=image)

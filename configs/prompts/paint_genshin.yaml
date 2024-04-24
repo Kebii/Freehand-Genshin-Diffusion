@@ -4,7 +4,7 @@ image_encoder_path: "./pretrained_weights/image_encoder"
 denoising_unet_path: "./exp_output/gensin_stage1/denoising_unet-60000.pth"
 reference_unet_path: "./exp_output/gensin_stage1/reference_unet-60000.pth"
 
-inference_config: "./configs/inference/inference_gensin.yaml"
+inference_config: "./configs/inference/inference_genhsin.yaml"
 weight_dtype: 'fp16'
 
-input_video_path: "/data2/zjx/dataset/gensin_pv/test_video/Naweiya.mp4"
+input_video_path: "./test_video/Naweiya.mp4"

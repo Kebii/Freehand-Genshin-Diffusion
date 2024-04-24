@@ -20,7 +20,7 @@ from configs.prompts.test_cases import TestCasesDict
 from src.models.unet_2d_condition import UNet2DConditionModel
 from src.models.unet_3d import UNet3DConditionModel
 # from src.pipelines.pipeline_pose2vid_long import Pose2VideoPipeline
-from src.pipelines.pipeline_gensinimg import GensinImagePipeline
+from src.pipelines.pipeline_genshinimg import GenshinImagePipeline
 from src.utils.util import get_fps, read_frames, save_videos_grid
 
 from decord import VideoReader
@@ -88,7 +88,7 @@ def main():
         torch.load(config.reference_unet_path, map_location="cpu"),
     )
 
-    pipe = GensinImagePipeline(
+    pipe = GenshinImagePipeline(
         vae=vae,
         image_encoder=image_enc,
         reference_unet=reference_unet,

@@ -10,7 +10,7 @@ from torch.utils.data import Dataset
 from transformers import CLIPImageProcessor
 
 
-class GensinVdImgDataset(Dataset):
+class GenshinVdImgDataset(Dataset):
     def __init__(
         self,
         img_size,
