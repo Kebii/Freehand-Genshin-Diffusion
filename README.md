@@ -1,5 +1,5 @@
-# Freehand-Gensin-Diffusion
-Transferring Gensin PVs into a freehand style with Diffusion Model.
+# Freehand-Genshin-Diffusion
+Transferring Genshin PVs into a freehand style with Diffusion Model.
 
 # Plans
 - [x] Inference codes of image-model
