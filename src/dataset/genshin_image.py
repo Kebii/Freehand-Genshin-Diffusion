@@ -17,8 +17,8 @@ class GenshinVdImgDataset(Dataset):
         img_scale=(1.0, 1.0),
         img_ratio=(0.9, 1.0),
         drop_ratio=0.1,
-        srcdata_path="/data2/zjx/dataset/gensin_pv/raw",
-        tgtdata_path="/data2/zjx/dataset/gensin_pv/draw"
+        srcdata_path="./Genshin_PV/raw",
+        tgtdata_path="./Genshin_PV/draw"
     ):
         super().__init__()
 
@@ -83,15 +83,15 @@ class GenshinVdImgDataset(Dataset):
 
         return sample
 
-class GensinImgDataset(Dataset):
+class GenshinImgDataset(Dataset):
     def __init__(
         self,
         img_size,
         img_scale=(1.0, 1.0),
         img_ratio=(0.9, 1.0),
         drop_ratio=0.1,
-        srcdata_path="/data2/zjx/dataset/gensin_pv/raw_img",
-        tgtdata_path="/data2/zjx/dataset/gensin_pv/draw_img"
+        srcdata_path="./Genshin_PV/raw_img",
+        tgtdata_path="./Genshin_PV/draw_img"
     ):
         super().__init__()
 

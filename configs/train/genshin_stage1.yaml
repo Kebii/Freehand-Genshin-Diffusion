@@ -1,9 +1,9 @@
 data:
-  train_bs: 1
-  train_width: 1920 
-  train_height: 1080 
-  srcdata_path: "/data2/zjx/dataset/gensin_pv/raw_img"
-  tgtdata_path: "/data2/zjx/dataset/gensin_pv/draw_img"
+  train_bs: 16
+  train_width: 512 
+  train_height: 512 
+  srcdata_path: "./Genshin_PV/raw_img"
+  tgtdata_path: "./Genshin_PV/draw_img"
 
 
 solver:
@@ -54,5 +54,5 @@ seed: 12580
 resume_from_checkpoint: ''
 checkpointing_steps: 2000
 save_model_epoch_interval: 1
-exp_name: 'gensin_stage1_1080p'
+exp_name: 'gensin_stage1_512'
 output_dir: './exp_output'  
