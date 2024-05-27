@@ -34,8 +34,8 @@ We observe following shortcomings in current version:
 We Recommend a python version `>=3.10` and cuda version `=11.7`. Then build environment as follows:
 
 ```shell
-conda create -n Gensin python=3.10
-conda activate Gensin
+conda create -n Genshin python=3.10
+conda activate Genshin
 # Install requirements with pip:
 pip install -r requirements.txt
 ```
