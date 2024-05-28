@@ -26,6 +26,8 @@ Transferring Genshin PVs into a freehand style with Diffusion Model.
 
 ![](https://github.com/Kebii/Freehand-Gensin-Diffusion/blob/master/assets/kunkun_480x320.gif)
 
+![](https://github.com/Kebii/Freehand-Gensin-Diffusion/blob/master/assets/thunder_480x320.gif)
+
 # Limitations
 We observe following shortcomings in current version:
 1. The primary issue is the temporal inconsistency in the generated frames, which causes flickering and jittering in the video.
